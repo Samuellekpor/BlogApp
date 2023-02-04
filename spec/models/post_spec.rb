@@ -33,6 +33,6 @@ RSpec.describe Post, type: :model do
     Comment.create(post:, author: @author, text: 'Hi Tom!')
     Comment.create(post:, author: @author, text: 'Hi Tom!')
 
-    expect(post.five_recent_comment.count).to eq(5)
+    expect(post.five_most_recent_comments.count).to eq(5)
   end
 end

@@ -29,6 +29,6 @@ RSpec.describe User, type: :model do
     Post.create(author:, title: 'Hello', text: 'This is my first post')
     Post.create(author:, title: 'Hello', text: 'This is my first post')
 
-    expect(author.three_recent_posts.count).to eq(3)
+    expect(author.three_most_recent_posts.count).to eq(3)
   end
 end

@@ -16,8 +16,8 @@
     <% @user.three_most_recent_posts.each do |post| %>
       <div>
         <%= link_to user_post_path(@user.id, post.id), class: "link-info" do %>
-          <%= post.title %>
-          <%= post.text %>
+          <h5><%= post.title %></h5>
+          <p><%= post.text %></p>
         <% end %>
       </div>
     <% end %>

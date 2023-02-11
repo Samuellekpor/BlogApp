@@ -14,46 +14,49 @@
  *= require_self
 */
 
- * {
+* {
   width: 90%;
- }
+}
 
- .users-container {
+.users-container {
   margin: 50px;
- }
+}
 
- .user-container {
+.user-container {
   display: grid;
   grid-template-columns: 1fr 3fr;
- }
+}
 
- .link-info {
+.link-info {
   text-decoration: none;
   margin-bottom: 25px;
- }
+}
 
- .user-info {
+.user-info {
   margin: 15px;
   display: flex;
   gap: 45px;
   border: 2px solid #000;
   width: 50%;
- }
+}
 
- .user-info p {
+.user-info p {
   margin-top: 6%;
- }
+}
 
- .comments, .post-info, .comments-info {
+.comments,
+.post-info,
+.comments-info {
   border: 1px solid black;
   margin-bottom: 10px;
- }
+}
 
- .post-container {
+.post-container {
   margin: 30px;
- }
+}
 
-.post-info-head, .post-right-info {
+.post-info-head,
+.post-right-info {
   display: flex;
 }
 

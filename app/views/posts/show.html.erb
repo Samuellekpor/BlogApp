@@ -3,8 +3,8 @@
     <div class="post-info-head">
       <h3>Post <%=@post.id %> by <%= @user.name %></h3>
       <div class="post-right-info">
-        <p>Comments : x</p>
-        <p>Likes : x</p>
+        <p>Comments : post.comments_counter</p>
+        <p>Likes : post.likes_counter</p>
       </div>
     </div>
     <p><%= @post.text %></p>

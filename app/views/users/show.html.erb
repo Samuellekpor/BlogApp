@@ -1,1 +1,34 @@
-<h1>Here is the specified user</h1>
+<div>
+  <div class="user-container">
+    <%= image_tag(@user.photo, size: "50x50") %>
+
+    <div class="user-info">
+      <h5><%= @user.name %></h5>
+      <p>Number of posts : </p>
+    </div>
+
+  </div>
+  <div>
+    <div>
+      <h5>Bio</h5>
+      <p><%= @user.bio %></p>
+    </div>
+    <% @user.three_most_recent_posts.each do |post| %>
+      <div>
+        <%= link_to user_post_path(@user.id, post.id), class: "link-info" do %>
+          <h4><%= post.title %></h4>
+          <p><%= post.text %></p>
+          <div>
+            <small>Comments: <%= post.comments_counter || 0 %>,</small>
+            <small>Likes: <%= post.likes_counter || 0 %></small>
+          </div>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+  <div>
+    <%= link_to user_posts_path(@user.id), class: "link-info" do %>
+      <button>See all posts</button>
+    <% end %>
+  </div>
+</div>

@@ -17,4 +17,10 @@
       </div>
     <% end %>
   </div>
+
+  <div>
+    <%= link_to new_user_post_comment_path(@user, @post), class: "link-info" do %>
+      <button>Add comment</button>
+    <% end %>
+  </div>
 </div>

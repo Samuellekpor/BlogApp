@@ -17,4 +17,14 @@
       </div>
     <% end %>
   </div>
+
+  <div>
+    <%= link_to new_user_post_comment_path(@user, @post), class: "link-info" do %>
+      <button>Add comment</button>
+    <% end %>
+
+    <%= form_with model: @like, url: user_post_likes_path(@user, @post), method: :post, class: 'form' do |f| %>
+      <div> <%= f.submit "Add a like" %> </div>
+    <% end %>
+  </div>
 </div>

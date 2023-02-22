@@ -1,6 +1,6 @@
 <div>
   <div class="user-container">
-    <%= image_tag(@user.photo, size: "50x50") %>
+    <img src="<%= @user.photo %>" alt="user-image">
     <div class="user-info">
       <h3><%= @user.name %></h3>
       <p>Number of posts : <%= @user.posts_counter || 0 %></p>
@@ -14,9 +14,15 @@
           <p><%= post.text %></p>
         <% end %>
       </div>
+      <div>
+        <small>Comments : <%= post.comments_counter %></small>
+        <small>Likes : <%= post.likes_counter %></small>
+      </div>
     <% end %>
     <div class="comments">
-      <h4>Username: Comment x</h4>
+      <% post.comments.each do |comment| %>
+        <h4>comment.author.name: <%= comment.text %>></h4>
+      <% end %>
     </div>
   <% end %>
   <div>

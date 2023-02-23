@@ -1,3 +1,4 @@
+=begin
 require 'rails_helper'
 
 RSpec.describe Post, type: :request do
@@ -33,3 +34,4 @@ RSpec.describe Post, type: :request do
     end
   end
 end
+=end

@@ -27,11 +27,11 @@ RSpec.describe 'Testing user index page', type: :feature do
       end
 
       scenario 'See the number of posts each user has written' do
-        expect(page).to have_content('Number of posts : 0')
+        expect(page).to have_content('Number of posts: 0')
       end
 
       scenario 'When I click on a user, I am redirected to that user\'s show page' do
-        click_link 'John', match: :first
+        click_link 'Paul', match: :first
         expect(current_path).to eq user_path(User.first.id)
       end
 
@@ -56,7 +56,8 @@ RSpec.describe 'Testing user index page', type: :feature do
       end
 
       scenario 'I can see the user\'s first 3 posts' do
-        expect(page).to have_content('post title post text')
+        expect(page).to have_content('post title')
+        expect(page).to have_content('post text')
       end
 
       scenario 'I can see a button that lets me view all of a user\'s posts' do

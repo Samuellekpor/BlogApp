@@ -42,9 +42,10 @@ RSpec.describe 'Post', type: :feature do
       end
 
       it 'When I click on a post, it redirects me to that post\'s show page.' do
-        click_link
+        click_link 'Tests testing'
         expect(current_path).to eq user_post_path(@user.id, @post.id)
       end
+
       it 'if comments counter is integer' do
         @post.comments_counter = 8
         expect(@post).to be_valid

@@ -7,7 +7,7 @@
 <div class="users-container">
   <% @users.each do |user| %>
     <div class="user-container">
-      <%= image_tag(user.photo, size: "50x50") %>
+      <img src="<%=user.photo%>" alt="user-image" />
       <%= link_to user_path(user.id), class:"link-info" do %>
         <div class="user-info">
           <h3><%= user.name %></h3>

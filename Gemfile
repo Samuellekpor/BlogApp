@@ -63,6 +63,8 @@ group :development do
 
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
+
+  gem 'active_record_query_trace'
 end
 
 group :test do

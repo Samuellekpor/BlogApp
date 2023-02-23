@@ -51,7 +51,5 @@ RSpec.describe 'Post', type: :feature do
         expect(@post).to be_valid
       end
     end
-
-    
   end
 end

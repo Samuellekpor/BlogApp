@@ -68,6 +68,16 @@ RSpec.describe 'Post', type: :feature do
         expect(page).to have_content 'Likes : 7'
       end
 
+      it 'Can see the post body' do
+        expect(page).to have_content 'testing'
+      end
+      it 'Can see the username of each commentator' do
+        expect(page).to have_content 'Sammuel'
+      end
+      it 'Can see the comment each commentator left' do
+        expect(page).to have_content 'My first comment'
+        expect(page).to have_content 'My second comment'
+      end
     end
   end
 end

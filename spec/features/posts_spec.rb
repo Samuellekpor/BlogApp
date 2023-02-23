@@ -51,5 +51,23 @@ RSpec.describe 'Post', type: :feature do
         expect(@post).to be_valid
       end
     end
+
+    feature 'Post show' do
+      background { visit user_post_path(@user.id, @post.id) }
+      it 'I can see the post\'s title.' do
+        expect(page).to have_content 'testing'
+      end
+
+      it 'Can see who wrote the post' do
+        expect(page).to have_content 'Sammuel'
+      end
+      it 'Can see how many comments it has' do
+        expect(page).to have_content 'Comments : 5'
+      end
+      it 'Can see how many likes it has' do
+        expect(page).to have_content 'Likes : 7'
+      end
+
+    end
   end
 end

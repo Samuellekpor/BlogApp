@@ -4,7 +4,7 @@
 
     <div class="user-info">
       <h5><%= @user.name %></h5>
-      <p>Number of posts : <%= @user.posts_counter%> </p>
+      <p>Number of posts : <%= @user.posts.count%> </p>
     </div>
 
   </div>
@@ -19,8 +19,8 @@
           <h4><%= post.title %></h4>
           <p><%= post.text %></p>
           <div>
-            <small>Comments: <%= post.comments_counter || 0 %>,</small>
-            <small>Likes: <%= post.likes_counter || 0 %></small>
+            <small>Comments: <%= post.comments.count || 0 %>,</small>
+            <small>Likes: <%= post.likes.count || 0 %></small>
           </div>
         <% end %>
       </div>

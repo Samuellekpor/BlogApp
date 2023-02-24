@@ -15,7 +15,9 @@
 */
 
 * {
-  width: 90%;
+  margin: 0;
+  padding: 0;
+  width: 95%;
 }
 
 .users-container {
@@ -68,4 +70,20 @@ button {
   width: 120px;
   margin: 5px;
   padding: 5px;
+}
+
+.title {
+  margin: 20px 0;
+}
+
+.connection_form {
+  margin: 10px 30px;
+}
+
+.new_user > * {
+  margin-bottom: 10px;
+}
+
+#user_remember_me {
+  width: 20px;
 }

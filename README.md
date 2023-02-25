@@ -107,7 +107,7 @@ To run tests, run the following command:
 
 OR
 
-`rubocop -a` 
+`rubocop -a`
 
 **it will automatically correct the errors**
 
@@ -122,6 +122,13 @@ OR
 - GitHub: [@githubhandle](https://github.com/Samuellekpor)
 - Twitter: [@twitterhandle](https://twitter.com/samuel_lekpor)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/sammuel-lekpor)
+
+
+👤 **Oluwatoyin Olaoye**
+
+- GitHub: [@Olaoye](https://github.com/abayomiolaoye)
+- Twitter: [@Olaoye](https://twitter.com/olaoyeelijah)
+- LinkedIn: [Oluwatoyin Olaoye](https://linkedin.com/in/oluwatoyinolaoye)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

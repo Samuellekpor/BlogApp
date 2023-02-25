@@ -31,6 +31,9 @@ gem 'devise'
 
 gem 'cancancan'
 
+# Use Json Web Token (JWT) for token based authentication
+gem 'jwt'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 

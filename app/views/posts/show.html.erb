@@ -14,6 +14,9 @@
     <% @post.five_most_recent_comments.each do |comment| %>
       <div>
         <h6><%= comment.author.name %>: <%= comment.text %></h6>
+        <% if can? :destroy, comment %>
+        <div><%= button_to 'Delete', user_post_comment_path(@user.id, @post.id, comment.id), method: :delete %></div>
+      <% end %>
       </div>
     <% end %>
   </div>
